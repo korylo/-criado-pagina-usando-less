@@ -24,42 +24,82 @@ li {
   justify-content: center;
 }
 @media (max-width: 767px) {
-  .container {
-    max-width: 70%;
-  }
+  max-width: 70%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    max-width: 80%;
-  }
+  max-width: 80%;
+}
+.imagens-canto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.imagens-canto img {
+  max-width: 100px;
+  height: auto;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
 }
 header {
   padding-bottom: 24px;
 }
 header .profile-avatar {
   display: block;
-  margin: 0 auto 24px;
+  justify-content: center;
+  margin: auto;
   border-radius: 50%;
+}
+img {
+  max-width: 50%;
+  height: 0 auto;
+  margin: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 .profile-bio {
   text-align: center;
 }
 .profile-bio-name {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 8px;
 }
 .profile-bio-subtitle {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .profile-bio-description {
-  font-size: 14px;
+  font-size: 20px;
   opacity: 0.7;
 }
 .social-links {
   display: flex;
   justify-content: space-between;
-  max-width: 240px;
+  max-width: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -74,6 +114,13 @@ header .profile-avatar {
 }
 .projects-list {
   margin-top: 32px;
+  display: block;
+  text-align: center;
+}
+.projects-list-item {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
 .projects-list-item a {
   text-decoration: none;
@@ -81,7 +128,7 @@ header .profile-avatar {
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
-  text-align: ceenter;
+  text-align: center;
   color: #dcdde1;
   font-weight: bold;
   border-radius: 30px;
